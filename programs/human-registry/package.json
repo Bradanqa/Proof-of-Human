@@ -1,0 +1,25 @@
+{
+  "name": "human-registry-tests",
+  "version": "0.1.0",
+  "description": "Test suite for Proof-of-Human smart contracts",
+  "scripts": {
+    "test": "anchor test",
+    "test:local": "anchor test --provider.cluster localnet",
+    "test:devnet": "anchor test --provider.cluster devnet",
+    "lint": "eslint tests/**/*.ts",
+    "lint:fix": "eslint tests/**/*.ts --fix"
+  },
+  "dependencies": {
+    "@coral-xyz/anchor": "^0.29.0",
+    "@solana/web3.js": "^1.87.0"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.3.11",
+    "@types/mocha": "^10.0.6",
+    "chai": "^4.3.10",
+    "mocha": "^10.2.0",
+    "ts-mocha": "^10.0.0",
+    "typescript": "^5.3.3",
+    "eslint": "^8.56.0"
+  }
+}
